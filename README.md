@@ -31,6 +31,12 @@ npm run dev
 
 ```
 
+**OpenAPI Documentation** is available at:  
+**`/doc`**
+
+**Api Reference** is available at:  
+**`/reference`**
+
 Deploy to Cloudflare Workers
 
 ```
