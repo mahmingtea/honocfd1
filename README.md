@@ -28,8 +28,9 @@ Run the app locally:
 
 ```
 npm run dev
-
 ```
+
+**Go to `/init`** to create comments table
 
 **OpenAPI Documentation** is available at:  
 **`/doc`**
@@ -41,5 +42,4 @@ Deploy to Cloudflare Workers
 
 ```
 npm run deploy
-
 ```
