@@ -100,7 +100,7 @@ export const deleteCommentsRoute = createRoute({
 
 export const putCommentsRoute = createRoute({
   method: "put",
-  path: "/comments/:1",
+  path: "/comments/:id",
   summary: "update comment",
   description: "/comments",
   request: {
@@ -135,7 +135,7 @@ export const putCommentsRoute = createRoute({
 
 export const patchCommentsRoute = createRoute({
   method: "patch",
-  path: "/comments/:1",
+  path: "/comments/:id",
   summary: "update comment body",
   description: "/comments",
   request: {
