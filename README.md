@@ -1,8 +1,6 @@
 ## Cloudflare D1 with hono openapi + scalar
 
-create wrangler.jsonc in your root directory and paste this
-
-> wrangler.jsonc
+Create a wrangler.jsonc file in the root directory and add the following configuration:
 
 ```
 {
@@ -13,16 +11,29 @@ create wrangler.jsonc in your root directory and paste this
     "d1_databases": [
      {
        "binding": "DB",
-       "database_name": "put your database name here",
-       "database_id": "put your database id from cloudflare d1 here"
+       "database_name": "<YOUR_DATABASE_NAME>",
+       "database_id": "<YOUR_DATABASE_ID>"
      }
     ]
 }
 ```
 
+Install the required packages using npm:
+
 ```
 npm install
+```
 
+Run the app locally:
+
+```
 npm run dev
+
+```
+
+Deploy to Cloudflare Workers
+
+```
+npm run deploy
 
 ```
