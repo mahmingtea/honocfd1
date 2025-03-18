@@ -10,7 +10,7 @@ import { zodError } from "../../docs/error.schema";
 
 export const getCommentsRoute = createRoute({
   method: "get",
-  path: "/comments/{id}",
+  path: "/comments/:id",
   summary: "get comment",
   description: "/comments",
   request: {
@@ -72,7 +72,7 @@ export const insertCommentsRoute = createRoute({
 
 export const deleteCommentsRoute = createRoute({
   method: "delete",
-  path: "/comments/{id}",
+  path: "/comments/:id",
   summary: "delete comment",
   description: "/comments",
   request: {
@@ -100,7 +100,7 @@ export const deleteCommentsRoute = createRoute({
 
 export const putCommentsRoute = createRoute({
   method: "put",
-  path: "/comments/{id}",
+  path: "/comments/:1",
   summary: "update comment",
   description: "/comments",
   request: {
@@ -135,7 +135,7 @@ export const putCommentsRoute = createRoute({
 
 export const patchCommentsRoute = createRoute({
   method: "patch",
-  path: "/comments/{id}",
+  path: "/comments/:1",
   summary: "update comment body",
   description: "/comments",
   request: {
